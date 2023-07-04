@@ -44,5 +44,3 @@ Config.Weapon = {
 	{weaponName = 'WEAPON_PISTOL', amount = 10}, -- amount is ammo count
 }
 ```
-
-https://forum.cfx.re/t/release-esx-give-all-players-item-or-money/1027386
