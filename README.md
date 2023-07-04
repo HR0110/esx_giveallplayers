@@ -3,35 +3,35 @@ You can give all players item or weapon or money with command
 
 also you can setting auto give time in config to all players
 
-**In Game Commands:**
+*Resource is edited by hristiyan_raykov#0 (Discord)*
+
+**In Game & Console Commands:**
 ```
 /giveallitem <item> <count>
 /giveallweapon <weapon> <amount>
 /addallmoney <account> <amount>
 ```
 
-**On Console Commands:** 
-(need changed prefix to “_”)
-```
-_giveallitem <item> <count> 
-_giveallweapon <weapon> <ammo amount>
-_addallmoney <account> <amount>
-```
-
 
 **Config:**
-```
-Config.AllowAdminInGameCommand = true -- Commands: /giveallitem <item> <count>, /giveallweapon <weapon> <ammo amount>, /addallmoney <account> <amount>
+```yaml
+Config = {}
+
+Config.Locale = GetConvar('esx:locale', 'en') -- en, tw
+
 Config.EnableServerCommand = true -- you can using command on console to give. but command prefix need changed to "_", example: _giveallitem, _giveallweapon, _addallmoney
 
 -- how many minutes to give. if don't want, you can type false
-Config.TimeGiveItem = 30
-Config.TimeGiveMoney = false 
+Config.TimeGiveItem = false
+Config.TimeGiveMoney = false
 Config.TimeGiveWeapon = false
+-- do you want random the auto give stuff of one?
+Config.RandomGiveItem = false
+Config.RandomGiveMoney = false
+Config.RandomGiveWeapon = false
 
 Config.Items = {
 	{name = 'water', count = 1},
---	{name = 'bread', count = 2}
 }
 
 Config.Money = {
@@ -42,7 +42,6 @@ Config.Money = {
 
 Config.Weapon = {
 	{weaponName = 'WEAPON_PISTOL', amount = 10}, -- amount is ammo count
---	{weaponName = 'WEAPON_FIREEXTINGUISHER', amount = 2000}
 }
 ```
 
