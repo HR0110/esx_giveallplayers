@@ -5,6 +5,8 @@ also you can setting auto give time in config to all players
 
 *Resource is edited by hristiyan_raykov#0 (Discord)*
 
+***Maintaining [ox_inventory](https://github.com/overextended/ox_inventory)!***
+
 **In Game & Console Commands:**
 ```
 /giveallitem <item> <count>
